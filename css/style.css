@@ -20,8 +20,9 @@ h3 {
 
 form,
 option,
-span {
-    color: #747574;
+span,
+footer {
+    color: #969696;
     font-weight: 200;
 }
 
@@ -63,6 +64,8 @@ h3 {
 
 footer {
     text-align: center;
+    margin: 15px 0 25px;
+    font-style: italic;
 }
 
 input,
@@ -96,8 +99,9 @@ label {
     border-radius: 5px;
     border: none;
     background-color: #4fb3ae;
-    
+    margin-top: 20px;
 }
+
 
 /* ---- pseudo classes ------*/
 
@@ -115,5 +119,6 @@ select::placeholder {
 input:focus  {
     border: 1px solid #2c2f4f;
 }
+
 
 /* ----  media queries ------*/
