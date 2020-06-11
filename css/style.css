@@ -1,8 +1,62 @@
 
+h1,
+h2,
+h3,
+form {
+    font-family: 'Merriweather', serif;
+}
 
-.info {
+h2,
+h3 {
+    color: #2c3038;
+}
+
+form,
+option,
+span {
+    color: #747574;
+    font-weight: 200;
+}
+
+main {
+    padding: 15px 15px;
+}
+
+.banner {
     display: flex;
-    flex-direction: column;
+    background-color: #2c3038;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    display: block;
+    text-transform: uppercase;
+    align-self: center;
+    margin: 24px auto;
+    font-size: 1.5em;
+}
+
+.intro {
+    text-align: center;
+    border-bottom: 3px solid #2c3038;
+    padding-bottom: 40px;
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+
+h3 {
+    border-top: 1px solid #2c3038;
+    padding-top: 20px;
+    margin-top: 3px;
+}
+
+footer {
+    text-align: center;
 }
 
 input {
