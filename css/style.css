@@ -7,6 +7,7 @@
 h1,
 h2,
 h3,
+legend,
 form,
 select,
 .btn {
@@ -14,7 +15,8 @@ select,
 }
 
 h2,
-h3 {
+h3,
+legend {
     color: #2c3038;
 }
 
@@ -60,10 +62,18 @@ h2 {
     font-size: 1.3em;
 }
 
-h3 {
+legend {
+    display: block;
+    width: 100%;
     border-top: 1px solid #2c3038;
-    padding-top: 20px;
-    margin-top: 3px;
+    margin: 3px 0 10px;
+    font-size: 1.15em;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -81,6 +91,14 @@ textarea {
     border: none;
     box-sizing: border-box;
     background-color: #ededed;
+}
+
+select:required:invalid {
+    color: #969696;
+}
+
+option[value=""][disabled] {
+    display: none;
 }
 
 label {
@@ -157,6 +175,15 @@ textarea:focus {
     transition: background-color 2s;
 }
 
+select:required:invalid {
+    color: #adadad;
+    font-size: .75em;
+    font-style: italic;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+
 
 /* ----  media queries ------*/
 
@@ -184,8 +211,9 @@ textarea:focus {
         padding-bottom: 20px;
     }
 
-    h3 {
+    legend {
         padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     #zip {
