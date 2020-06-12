@@ -6,7 +6,6 @@
 
 h1,
 h2,
-h3,
 legend,
 form,
 select,
@@ -15,7 +14,6 @@ select,
 }
 
 h2,
-h3,
 legend {
     color: #2c3038;
 }
@@ -63,11 +61,12 @@ h2 {
 }
 
 legend {
-    display: block;
     width: 100%;
     border-top: 1px solid #2c3038;
     margin: 3px 0 10px;
     font-size: 1.15em;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 fieldset {
@@ -180,9 +179,10 @@ select:required:invalid {
     font-size: .75em;
     font-style: italic;
   }
-  option[value=""][disabled] {
+  
+option[value=""][disabled] {
     display: none;
-  }
+}
 
 
 /* ----  media queries ------*/
@@ -209,11 +209,6 @@ select:required:invalid {
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 20px;
-    }
-
-    legend {
-        padding-top: 30px;
-        padding-bottom: 10px;
     }
 
     #zip {
