@@ -153,4 +153,28 @@ textarea:focus {
         margin: 0 auto;
     }
 
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 400px;
+        margin-left: auto;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        padding-top: 30px;
+    }
+
+    #zip {
+        width: 150px;
+        margin-right: 250px;
+    }
+
 }
