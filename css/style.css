@@ -37,6 +37,10 @@ main {
     width: 100%;
 }
 
+.details {
+    background-color: rgba(79, 179, 174, .15);
+}
+
 h1 {
     display: block;
     text-transform: uppercase;
@@ -76,7 +80,7 @@ textarea {
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
-    background-color: #f2f2f2;
+    background-color: #ededed;
 }
 
 label {
@@ -97,7 +101,7 @@ label {
     color: #fff;
     border-radius: 5px;
     border: none;
-    background-color: #4fb3ae;
+    background-color: rgba(79, 179, 174, 1);
     margin-top: 20px;
 }
 
@@ -139,6 +143,18 @@ select::placeholder {
 input:focus,
 textarea:focus {
     border: 1px solid #2c2f4f;
+    background-color: #fff;
+    transition: background-color 2s;
+}
+
+.btn:hover {
+    background-color: rgba(79, 179, 174, .7);
+    transition: background-color 1s;
+}
+
+.btn:active {
+    background-color: salmon;
+    transition: background-color 2s;
 }
 
 
@@ -165,7 +181,7 @@ textarea:focus {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     h3 {
