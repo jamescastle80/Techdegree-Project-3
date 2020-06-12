@@ -153,20 +153,4 @@ textarea:focus {
         margin: 0 auto;
     }
 
-    label,
-    input,
-    select {
-        display: inline-block;
-        justify-content: space-between;
-    }
-
-    input,
-    select {
-        width: 70%;
-    }
-
-    label {
-        margin-right: auto;
-    }
-
 }
